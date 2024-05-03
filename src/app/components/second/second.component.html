@@ -1,0 +1,8 @@
+<button (click)="clickMeHandler()">Click me!</button>
+<button (click)="clickToChangeTooltip()">Change Tooltip</button>
+
+<div>Il mio parent ha il seguente title {{ parentName }}</div>
+<div class="field">
+    <div class="label">Nome:</div>
+    <input type="text" title="nome"  [(ngModel)]="nome">
+</div>
