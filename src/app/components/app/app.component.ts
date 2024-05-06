@@ -47,7 +47,7 @@ export class AppComponent {
         nome: "Fabio",
         cognome: "Casa",
         eta: 19,
-        cellulare: "3922685456"
+        cellulare: "3922683333"
       },
       {
         nome: "Pippo",
