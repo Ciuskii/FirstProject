@@ -1,3 +1,5 @@
+<!--#region Codice Spiegazione -->
+<!-- 
 <button (click)="clickMeHandler()">Click me!</button>
 <button (click)="clickToChangeTooltip()">Change Tooltip</button>
 
@@ -5,4 +7,20 @@
 <div class="field">
     <div class="label">Nome:</div>
     <input type="text" title="nome"  [(ngModel)]="nome">
+</div>
+
+@if (divEsisto) {
+    <div>Esisto!</div>
+}
+-->
+<!--<div *ngIf="divEsisto">Esisto! con ngIf</div> /*Vecchio Stile*/
+<button (click)="toggleDivEsisto()" >ToggleDivEsisto</button>
+-->
+
+<!--#endregion -->
+<div class="item" *ngFor="let contatto of contatti">
+    <div class="item-prop">{{ contatto.nome }}</div>
+    <div class="item-prop">{{ contatto.cognome }}</div>
+    <div class="item-prop">{{ contatto.eta }}</div>
+    <div class="item-prop">{{ contatto.cellulare }}</div>
 </div>

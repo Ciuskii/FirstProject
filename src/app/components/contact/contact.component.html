@@ -1,0 +1,24 @@
+<div *ngIf="contatto && isViewMode" class="item">
+    <div class="item-prop">{{ contatto.nome }}</div>
+    <div class="item-prop">{{ contatto.cognome }}</div>
+    <div class="item-prop">{{ contatto.eta }}</div>
+    <div class="item-prop">{{ contatto.cellulare }}</div>
+    <button (click)="modifica()">Modifica</button>
+    <button (click)="elimina()">Elimina</button>
+</div>
+<div *ngIf="contatto && !isViewMode" class="item">
+    <div class="item-prop">Nome: </div>
+    <input type="text" title="nome" [(ngModel)]="contatto.nome">
+
+    <div class="item-prop">Cognome: </div>
+    <input type="text" title="cognome" [(ngModel)]="contatto.cognome">
+
+    <div class="item-prop">Età: </div>
+    <input type="number" title="eta" [(ngModel)]="contatto.eta">
+
+    <div class="item-prop">Cellulare: </div>
+    <input type="text" title="cellulare" [(ngModel)]="contatto.cellulare">
+
+    <button (click)="saveHandler()">Save</button>
+    <button (click)="annullaHandler()">Annulla</button>
+</div>
